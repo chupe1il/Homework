@@ -128,7 +128,7 @@ hr {
     float: right;
 }*/
 .picturebox {
-   background-image: url("/jackalope_in_the_wild_large.jpg");
+   background-image: url("./jackalope_in_the_wild_large.jpg");
    background-color: white;
    border:  1px solid black;
    height: 150px;
