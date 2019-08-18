@@ -1,0 +1,282 @@
+/* This is the CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* This is my part */
+
+.mainbox {
+    background-color: gainsboro;
+    height: 450px;
+    margin-left: 10%;
+    padding: 20px;
+    width: 650px;
+    display: block;
+}
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+} 
+
+ h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding: 0px;
+ }
+ h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    width: 300px;
+    margin: 10px;
+    /*display: inline-block;*/
+}
+ h3 {
+   font-size: 17px;
+   margin-bottom: 20px;
+   font-weight: bolder;
+   text-align: center;
+ }
+h5 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 40px;
+}
+hr {
+   /* display: block; Isn't really doing much*/
+    background-color: black;
+    display: block;
+    height: 5px;
+    /* border: 55px; */
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.thinline {
+    background-color: black;
+    /*border-bottom-width: 40px;*/
+    height: 1px;
+    /* width: 620px;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    /*border-block-color: black;*/
+}
+.thinline2 {
+    background-color: black;
+    /*border-bottom-width: 40px;*/
+    height: 1px;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20;
+    /*border-block-color: black;*/
+}
+/*.container {
+    height: 192px;
+    width: 7000px;
+    display: inline;
+    float: right;
+}*/
+.picturebox {
+   background-image: url("/jackalope_in_the_wild_large.jpg");
+   background-color: white;
+   border:  1px solid black;
+   height: 150px;
+   width: 125px;
+   padding: 20px;
+   margin-top: 15px;
+   /*margin: 30px; */
+   margin-left: 60px;
+   /*float: left;
+   /*position: relative; */
+   right: 50px;
+   display: inline-block;*/
+}
+.textbox {
+    float: left;
+    height: 1.5in;
+    width: 4in;
+}
+ .links {
+    display: block;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-bottom: 35px;
+    padding-left: 35px;
+    
+}
+/* div{
+    background-color: #666;
+    border:  1px solid #949599;
+    box-sizing: border-box 500px 500px;
+}*/
+p {
+    /* - Commented this out as it didn't do anything 
+    box-sizing: border-box 50% 30px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+    /*display: inline-block;*/
+    width: 3505x;
+}
+.grid {
+    height: 400px;
+    background-color: aqua;
+    display: grid;
+    grid-gap 25px;
+    grid-auto-columns: 300px;
+    /*grid-template-columns: 200px 20px 200px 20px 200px;
+    grid-template-rows: 100px 10px 100px 10px 100px;*/
+}
+.coloredbox {
+    /*display: inline; */
+    background: linear-gradient(135deg, rgb(221, 69, 69) 10%, rgb(65, 65, 240)  60%);
+    /*grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;*/
+    border-radius: 5px;
+    margin-top: 50px;
+        
+}
+.whitebox {
+    padding-top: 10px;
+    font-size: 25px;
+    background-color: white
+    /*grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6; */
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 15px #aaaaaa;
+}
+.grid2 {
+    display: grid;
+    height: 350px;
+    grid-auto-columns: 3fr;
+    grid-auto-rows: 275px;
+    /*grid-template-rows: 300px 300px 300px;*/
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    /*grid-row-gap: 30px;*/
+}
+.grid3 {
+    display: grid;
+    grid-auto-columns: auto auto auto;
+    grid-gap: 0px 30px;
+    grid-template-rows: 375px 50px 375px 50px 375px 50px;
+    font-size: 25px;
+    text-align: center;
+    /*grid-template-rows: auto auto auto auto auto auto; */
+}
+
+}
+.project1 {
+    padding-top: 10px;
+    font-size: 25px;
+    /* This didn't do anything - font-size: 25px; */
+    /* - this doesn't do anything either, but what's strange is that in .project 2 these values work fine.  padding-top: 10px;
+    background-color: white
+    /*grid-column-start: 3;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    border-radius: 4px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 15px #aaaaaa; 
+    More strangness - the first .project class I do seems to get ignored
+}
+
+.project2 {
+    padding-top: 10px;
+    font-size: 25px;
+    background-color: white
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 15px #aaaaaa;
+}
+.project3 {
+    padding-top: 10px;
+    font-size: 25px;
+    background-color: white
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 15px #aaaaaa;
+}
+.project4 {
+    padding-top: 10px;
+    font-size: 25px;
+    background-color: white
+    /*grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6; */
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 15px #aaaaaa;
+}
+.project5 {
+    background-color: white
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-radius: 4px;
+    box-shadow: 5px 5px grey;
+}
